@@ -144,11 +144,10 @@ update
 		if (timer.CurrentTime.RealTime.Value.TotalSeconds < 4) {
 			vars.split = 0;
 			byte[] data = Enumerable.Repeat((byte)0x00, 0x70).ToArray();
-			//DeepPointer fileA = new DeepPointer("project64.exe", 0xD6A1C, 0x207708); //TODO: this is better solution
 			IntPtr ptr;
 		
-			var module =  modules.FirstOrDefault(m => m.ModuleName.ToLower() == "project64.exe");
-			ptr = module.BaseAddress + 0xD6A1C;
+			var module =  modules.FirstOrDefault(m => m.ModuleName.ToLower() == "RSP 1.7.dll");
+			ptr = module.BaseAddress + 0x44B5C;
 		
 			if (!game.ReadPointer(ptr, false, out ptr) || ptr == IntPtr.Zero)
 			{
