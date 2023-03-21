@@ -1,11 +1,11 @@
 state("project64")
 {
-	byte Stars : 0xD6A1C, 0x33B218;
-	byte level : "project64.exe", 0xD6A1C, 0x32DDFA;
-	byte music : "project64.exe", 0xD6A1C, 0x22261E;
-	int anim: "project64.exe", 0xD6A1C, 0x33B17C;
-	int time: "project64.exe", 0xD6A1C, 0x32D580;
-	byte isPaused: "project64.exe", 0xD75E4;
+	byte Stars : "RSP 1.7.dll", 0x44B5C, 0x33B218;
+	byte level : "RSP 1.7.dll", 0x44B5C, 0x32DDFA;
+	byte music : "RSP 1.7.dll", 0x44B5C, 0x22261E;
+	int anim: "RSP 1.7.dll", 0x44B5C, 0x33B17C;
+	int time: "RSP 1.7.dll", 0x44B5C, 0x32D580;
+	byte isPaused: "RSP 1.7.dll", 0x45724;
 }
 
 startup
